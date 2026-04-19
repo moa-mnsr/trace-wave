@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'GT Pressura Mono';
+    src: url('fonts/GT-Pressura-Mono-Regular-Trial.woff2') format('woff2'),
+         url('fonts/GT-Pressura-Mono-Regular-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GT Pressura Mono';
+    src: url('fonts/GT-Pressura-Mono-Regular-Italic-Trial.woff2') format('woff2'),
+         url('fonts/GT-Pressura-Mono-Regular-Italic-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+html, body {
+	height: 100dvh;
+	background-color: rgb(46, 5, 46);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: snow;
+	font-family: 'GT Pressura Mono', monospace;
+}
+
+.flex-container {
+	border: 1px solid turquoise;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+}
+
+.wave-container {
+	border: 1px dotted yellow;
+	box-sizing: border-box;
+	flex: 1;
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.text-container {
+	border: 1px dotted orange;
+	box-sizing: border-box;
+	flex: 1;
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text, .wave {
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	.flex-container {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.text-container {
+		order: -1;
+	}
+}
