@@ -15,7 +15,7 @@
 
 html, body {
 	height: 100dvh;
-	background-color: rgb(46, 5, 46);
+	background-color: rgb(235, 235, 235);
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -24,7 +24,6 @@ html, body {
 }
 
 .flex-container {
-	border: 1px solid turquoise;
 	height: 100%;
 	box-sizing: border-box;
 	display: flex;
@@ -33,23 +32,27 @@ html, body {
 }
 
 .wave-container {
-	border: 1px dotted yellow;
+	border: 1px solid rgb(16, 16, 16);;
 	box-sizing: border-box;
 	flex: 1;
 	margin: 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	background-color: #CCD2DA;
+	color: rgb(16, 16, 16);
 }
 
 .text-container {
-	border: 1px dotted orange;
+	border: 1px solid rgb(16, 16, 16);;
 	box-sizing: border-box;
 	flex: 1;
 	margin: 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	background-color: #D1D4C9;
+	color: rgb(16, 16, 16);
 }
 
 .text, .wave {
@@ -61,6 +64,7 @@ html, body {
 	.flex-container {
 		flex-direction: column;
 		justify-content: flex-start;
+		height: auto;
 	}
 
 	.text-container {
